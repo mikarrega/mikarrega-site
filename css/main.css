@@ -874,9 +874,6 @@ footer .msg p {
   width: 100%;
   max-width: 80rem;
 }
-.s-app .right-area .text-app {
-  margin-bottom: 10.4rem;
-}
 .s-app .right-area .text-app h2 {
   max-width: 48.8rem;
   color: #33303E;
@@ -1032,9 +1029,6 @@ footer .msg p {
   }
   .s-app .right-area {
     max-width: 100%;
-  }
-  .s-app .right-area .text-app {
-    margin-bottom: 5.7rem;
   }
   .s-app .right-area .text-app h2 {
     max-width: 42.4rem;
