@@ -172,8 +172,11 @@
     }
   }
   @include responsive(560px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 12rem;
-    height: 73.2rem;
+    
     .left-area {
       h3 {
         font-size: 1.6rem;
@@ -185,7 +188,7 @@
       }
       ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 3.7rem;
         max-width: 28rem;
         li {
@@ -479,8 +482,8 @@
       z-index: -1;
     }
     .left-area {
+      height: 60rem;
       flex-direction: column-reverse;
-      margin-top: 11.7rem;
       .text {
         margin-bottom: 4rem;
         max-width: 27rem;

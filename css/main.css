@@ -335,9 +335,6 @@ header .btn-mobile {
   header nav .btn-secondary {
     display: none;
   }
-  header nav .btn-secondary :hover {
-    cursor: pointer;
-  }
 }
 
 footer {
@@ -767,8 +764,10 @@ footer .msg p {
 }
 @media (max-width: 560px) {
   .s-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 12rem;
-    height: 73.2rem;
   }
   .s-hero .left-area h3 {
     font-size: 1.6rem;
@@ -780,7 +779,7 @@ footer .msg p {
   }
   .s-hero .left-area ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 3.7rem;
     max-width: 28rem;
   }
@@ -1068,8 +1067,8 @@ footer .msg p {
     z-index: -1;
   }
   .s-app .left-area {
+    height: 60rem;
     flex-direction: column-reverse;
-    margin-top: 11.7rem;
   }
   .s-app .left-area .text {
     margin-bottom: 4rem;
