@@ -1,7 +1,7 @@
 .card-deposition {
   width: 100%;
   max-width: 38.4rem;
-  height: 20.9rem;
+  height: 40.9rem;
   background: rgba(241, 240, 245, 0.55);
   border-radius: 8px;
   padding: 3.7rem 3.2rem 2rem 3.2rem;
@@ -19,5 +19,10 @@
   }
   p {
     color: $gray-400;
+  }
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 }

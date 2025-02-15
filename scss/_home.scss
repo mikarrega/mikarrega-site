@@ -1,7 +1,30 @@
-.s-hero {
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 78.6rem;
-  background: url("../img/bg-hero.svg") no-repeat center center;
+  height: 58.6rem;
+  overflow: hidden;
+  z-index: -1;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+  }
+}
+
+.s-hero {
+  position: relative;
+  width: 100%;
+  height: 58.6rem;
   padding-top: 17.5rem;
   .container {
     display: flex;
@@ -31,7 +54,7 @@
           width: 48px;
           height: 48px;
           border-radius: 50%;
-          background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0) 100%);
+          background: linear-gradient(rgba(244, 254, 255, 0.09) 0%, rgba(53, 202, 226, 0) 100%);
           @include flex(row, center, center);
           margin-right: 1.2rem;
         }
@@ -106,7 +129,6 @@
     }
   }
   @include responsive(991px) {
-    height: 89.1rem;
     background-size: cover;
     padding-top: 15rem;
     .container {
@@ -212,29 +234,11 @@
   }
   .left-area {
     width: 100%;
-    max-width: 27.7rem;
+    opacity: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    .mockup {
-      position: relative;
-      width: 100%;
-      height: 58.9rem;
-      margin-bottom: 12.2rem;
-      .circle {
-        position: absolute;
-        max-width: inherit;
-        top: 87px;
-        left: -215px;
-        z-index: 0;
-      }
-      .phone {
-        max-width: initial;
-        position: absolute;
-        top: -38px;
-        left: -52px;
-      }
-    }
+    align-items: center;
+    justify-content: initial;
+    height: 100rem;
     .text {
       position: relative;
       display: flex;
@@ -282,7 +286,7 @@
     width: 100%;
     max-width: 80rem;
     .text-app {
-      margin-bottom: 14.4rem;
+      margin-bottom: 10.4rem;
       h2 {
         max-width: 48.8rem;
         color: $gray-600;
@@ -418,9 +422,8 @@
       flex-direction: column-reverse;
     }
     .left-area {
-      @include flex(row, center, space-between);
+      @include flex(row, center, center);
       max-width: 100%;
-      margin-top: 8rem;
       .mockup {
         margin-bottom: 0;
         max-width: 27.3rem;
@@ -566,7 +569,7 @@
 }
 
 .s-depositions {
-  padding-top: 13.4rem;
+  padding-bottom: 13.4rem;
   .top {
     @include flex(row, flex-end, space-between);
     margin-bottom: 4rem;
@@ -659,11 +662,11 @@
           margin-bottom: 4.5rem;
         }
         .icon {
-          width: 45px;
-          height: 45px;
+          width: 100px;
+          height: 48px;
           @include flex(row, center, center);
           background: $brand-green-light;
-          border-radius: 8px;
+          border-radius: 50px;
         }
         .info {
           max-width: 50.1rem;
@@ -687,6 +690,8 @@
       bottom: -1.5rem;
       z-index: 2;
       max-width: 32.6rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      border-radius: 50px;
     }
     .mk-02 {
       position: absolute;
@@ -694,6 +699,8 @@
       top: -4.5rem;
       z-index: 2;
       max-width: 32.6rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      border-radius: 50px;
     }
     .circle {
       position: absolute;
