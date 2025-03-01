@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .card-deposition {
   width: 100%;
   max-width: 38.4rem;

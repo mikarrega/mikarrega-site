@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .btn-primary,
 .btn-secondary {
   font-family: 'Poppins', sans-serif;
